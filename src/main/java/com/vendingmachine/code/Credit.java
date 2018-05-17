@@ -78,4 +78,25 @@ public class Credit
     {
         this.availableCredit -= price;
     }
+
+    /**
+     * Getter for availableCredit.
+     *
+     * @return the availableCredit
+     */
+    public int getAvailableCredit()
+    {
+        return availableCredit;
+    }
+
+    /**
+     * Setter for availableCredit.
+     *
+     * @param availableCredit the availableCredit to set
+     */
+    
+    public void setAvailableCredit(int availableCredit)
+    {
+        this.availableCredit = availableCredit;
+    }
 }

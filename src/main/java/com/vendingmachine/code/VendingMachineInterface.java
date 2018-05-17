@@ -8,4 +8,5 @@ public interface VendingMachineInterface
 	String insertCoin(final Coin coin);
 	void selectProduct();
 	List returnCoins();
+    int getAvailableCredit();	
 }
