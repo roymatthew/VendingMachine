@@ -5,12 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.vendingmachine.code.Coin;
 import com.vendingmachine.code.VendingMachine;
+import com.vendingmachine.code.VendingMachineInterface;
 
 public class VendingMachineTest 
 {
 	
-	private VendingMachine vendingMachine = null;
+	private VendingMachineInterface vendingMachine = null;
 	
 	@Before
 	public void setup()
@@ -23,5 +25,12 @@ public class VendingMachineTest
 		
 		assertNotNull(vendingMachine.powerOn());
 	}
+	
+    @Test
+    public void whenInsertCoinsVendingMachineDisplaysCredit() 
+    {
+        Coin coin = new Coin(5);
+        assertNotNull(vendingMachine.insertCoin(coin));
+    }	
 
 }

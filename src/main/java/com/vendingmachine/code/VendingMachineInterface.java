@@ -5,7 +5,7 @@ import java.util.List;
 public interface VendingMachineInterface 
 {
 	String powerOn();
-	String insertMoney();
+	String insertCoin(final Coin coin);
 	void selectProduct();
 	List returnCoins();
 }

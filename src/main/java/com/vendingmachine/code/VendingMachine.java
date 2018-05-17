@@ -2,7 +2,10 @@ package com.vendingmachine.code;
 
 import java.util.List;
 
-public class VendingMachine implements VendingMachineInterface {
+public class VendingMachine implements VendingMachineInterface 
+{
+    
+    private static final Credit credit = Credit.getInstance();
 
 	public String powerOn() {
 		final String message = "Welcome";
@@ -15,8 +18,22 @@ public class VendingMachine implements VendingMachineInterface {
 	}
 
 	@Override
-	public String insertMoney() {
-		return null;		
+	public String insertCoin(final Coin coin) {
+	    
+        switch (getWeight(coin))
+        {
+            case PENNY:
+                break;
+            case NICKEL:
+                break;
+            case DIME:
+                break;
+            case QUARTER:
+                break;
+            default:
+                break;
+        }
+		return displayMessage("Credit = 0");		
 	}
 
 	@Override
@@ -29,6 +46,13 @@ public class VendingMachine implements VendingMachineInterface {
 	public List returnCoins() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	private CoinEnum getWeight(final Coin coin)
+	{
+	    int weight = 0;
+	    
+	    return CoinEnum.PENNY;
 	}
 
 }
