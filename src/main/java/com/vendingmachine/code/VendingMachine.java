@@ -77,9 +77,8 @@ public class VendingMachine implements VendingMachineInterface
     }
 
     @Override
-	public void selectProduct() {
-		// TODO Auto-generated method stub
-		
+	public String selectProduct() {
+        return null;		
 	}
 
 	@Override

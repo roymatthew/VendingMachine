@@ -63,6 +63,11 @@ public class VendingMachineTest
         });
         
         assertTrue(65 == vendingMachine.getAvailableCredit());
-    }     
+    }
+    @Test
+    public void whenProductSelectedVendingMachineDisplaysMessage()
+    {
+        assertNotNull(vendingMachine.selectProduct());
+    }
 
 }

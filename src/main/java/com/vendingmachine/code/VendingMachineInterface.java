@@ -6,7 +6,7 @@ public interface VendingMachineInterface
 {
 	String powerOn();
 	String insertCoin(final Coin coin);
-	void selectProduct();
+	String selectProduct();
 	List returnCoins();
     int getAvailableCredit();	
 }
