@@ -2,19 +2,19 @@ package com.vendingmachine.code;
 
 public enum CoinEnum
 {
-    PENNY(1,1),
-    NICKEL(5,5),
-    DIME(10,10),
-    QUARTER(25,25);
+    PENNY(1,.01),
+    NICKEL(5,.05),
+    DIME(10,.10),
+    QUARTER(25,.25);
     
     private int weight;
-    private int value;
+    private Double value;
     /**
      * Enum constructor.
      * @param weight
      * @param value
      */
-    private CoinEnum(int weight, int value)
+    private CoinEnum(int weight, double value)
     {
         this.weight = weight;
         this.value = value;
@@ -43,7 +43,7 @@ public enum CoinEnum
      *
      * @return the value
      */
-    public int getValue()
+    public double getValue()
     {
         return value;
     }
@@ -53,7 +53,7 @@ public enum CoinEnum
      * @param value the value to set
      */
     
-    public void setValue(int value)
+    public void setValue(double value)
     {
         this.value = value;
     }

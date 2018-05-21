@@ -13,7 +13,7 @@ public class Coin
     }
     private int weight;
     private String name;
-    private int value;
+    private double value;
     /**
      * Getter for weight.
      *
@@ -38,7 +38,7 @@ public class Coin
      *
      * @return the value
      */
-    public int getValue()
+    public double getValue()
     {
         return value;
     }
@@ -48,7 +48,7 @@ public class Coin
      * @param value the value to set
      */
     
-    public void setValue(final int value)
+    public void setValue(final double value)
     {
         this.value = value;
     }

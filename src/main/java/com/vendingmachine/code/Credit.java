@@ -13,7 +13,7 @@ public class Credit
     
     private List<Coin> coins;
     
-    private int availableCredit = 0;
+    private Double availableCredit = 0.00;
 
     /**
      * Getter for coins.
@@ -71,10 +71,10 @@ public class Credit
     
     public void resetCredit()
     {
-        this.availableCredit = 0;
+        this.availableCredit = 0.00;
     }
     
-    public void subtractCredit(int price)
+    public void subtractCredit(Double price)
     {
         this.availableCredit -= price;
     }
@@ -84,7 +84,7 @@ public class Credit
      *
      * @return the availableCredit
      */
-    public int getAvailableCredit()
+    public Double getAvailableCredit()
     {
         return availableCredit;
     }
@@ -95,7 +95,7 @@ public class Credit
      * @param availableCredit the availableCredit to set
      */
     
-    public void setAvailableCredit(int availableCredit)
+    public void setAvailableCredit(final Double availableCredit)
     {
         this.availableCredit = availableCredit;
     }
